@@ -34,9 +34,12 @@ textarea {
   margin-bottom: 10px;
   }
 }
+
+/* Change nav-bar color */
 .navbar-inner {
-  background:black;
+  background:$black;
 }
+
 /* Typography */
 h1 , h2 , h3 , h4 , h5 , h6 {
   line-height: 1;
@@ -158,4 +161,18 @@ input, textarea, select, .uneditable-input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+/* users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }
