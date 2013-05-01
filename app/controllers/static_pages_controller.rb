@@ -4,8 +4,27 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+  
   def about
   end
+  
   def contact
   end
+  
+  def aberdeen
+  end
+  
+  def vauxhall
+  end
+  def canarywharf
+  end
+  
+  def lynedoch
+  end
+  def merchantcity
+  end
+  
+  def branchs
+  end
+
 end

@@ -1,7 +1,12 @@
 <% provide(:title , 'Home') %>
-	<div class="center hero-unit">	
-		<h1>Welcome To The Sample App</h1>
-		<p>This is the home page of my new app</p>
-		<%= link_to "Sign up Now!" , signup_path , class: "btn btn-large btn-primary"%>
+	<div class="left hero-unit">	
+		
+		<p>Dream Home Serviced Apartments have been developed to provide the highest standards of luxury accommodation.</p>
+		
+		<% if signed_in? %>
+		<%= link_to "Book now!", '#', class: "btn btn-large btn-primary"%>
+		<% else %>
+		<p> If you are not a registed user you can view our gallery only! and if you would like to book an appartment you have to
+		<%= link_to "Sign up Now!" , signup_path , class: "btn btn-large btn-primary"%> to use this function. </p>
+		<% end %>
 	</div>
-		<%= link_to image_tag("rails.png" , alt: "Rails" ) , 'https://rubyonrails.org'%>
