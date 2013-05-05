@@ -1,0 +1,62 @@
+<% provide(:title , 'Booking Online') %>
+<h1>Booking Online</h1>
+<div class="row">
+	<div class="span6 offset2 hero-unit">
+		<%= form_for @ticket do |ticket_form| %>
+		...
+		<%= ticket_form.fields_for :property do |property_fields| %>
+		City: <%= property_fields.text_field :p_city %>
+		Street: <%= property_fields.text_field :p_street %>
+		<% end %>
+		...
+		<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<%= simple_form_for :property, :url => { :controller => :properties, :action => "create" } do |f| %>
+  <h1>Create a Post</h1>
+  <%= f.input :p_city, :label => false, :placeholder => "Name" %>
+  <%= f.input :p_street, :label => false, :placeholder => "Title" %>
+  <%= f.input :rooms, :label => false, :placeholder => "Content", :as => :text %>
+  <%= f.simple_fields_for :topic do |topic_form| %>
+    <%= topic_form.input :ticket_type, :label => false, :placeholder => "Topic" %>
+  <% end %>
+  <%= f.button :submit, "Post" %>  
+<% end %>
+
+
+
+
+
+
+
+<!-->	<!-->	<%= form_for (@ticket) do |f| -%>
+	<%= f.fields_for :properties do |property|%>
+	<%= property.label "Desired City:"%>
+	<%= property.collection_select :ticket_id, Property.all, :id, :p_city %>
+	<%= property.label "Street:"%>
+	<%= property.collection_select :ticket_id, Property.all, :id, :p_street%>
+	<%= property.label "Property Type:"%>
+	<%= property.collection_select :ticket_id, Property.all, :id, :property_type %>
+	<%= property.label "Number of Rooms:"%>
+	<%= property.collection_select :ticket_id, Property.all, :id, :rooms %>
+	<%= property.label "Rent amount:"%>
+	<%= property.collection_select :ticket_id, Property.all, :id, :rent %>
+<!--	City : <%= property.select :p_city, ['Aberdeen', 'London', 'Glasgow'] %>
+	Street: <%= property.select :p_street , [ '16 Holhed', '6 Agryll St' ]%>
+          <!--     <%= property.label :p_street %><%= property.text_field :p_street %>
+               <%= property.label :rooms %><%= property.text_field :rooms %> -->
+	<% end %>
+	<%= f.submit "Click Here" , class: "btn btn-large btn-primary"%>
+	<% end %>
+		</div>
+</div>

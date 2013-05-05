@@ -1,14 +1,20 @@
 <footer class="footer">
-	<small>
-		Dream Home's Website by <a href="https://www.facebook.com/br0ken.pr0mises" target="_blank">Code Vortex </a>.<br>
-		(c) Copyright© 2013. All Rights Reserved. 
+		<small>
+		Dream Home's Website by <%= link_to "Code Vortex","https://github.com/Code-Vortex", target: "_blank" %>.<br>
+		(c) Copyright© 2013. All Rights Reserved. Proudly made in Egypt.
 	</small> 
 	<nav>
-		<ul>
-			<li><%= link_to "|About|" , about_path%></li>
-			<li><%= link_to "|Contact|" , contact_path%></li>
-			<li><%= link_to "|Mail us|", mailus_path %> </li>
-			<li><a href="https://github.com/Code-Vortex" target="_blank">|News|</a></li>
-		</ul>
+		<div class="span2 hero-unit">Site Links:<br />
+			<small><%= link_to "About" , about_path%></small><br />
+				<small><%= link_to "Contact us", '/contact' %> </small><br />
+				<small><%= link_to "Visitor Agreement", 'http://www.dominionenterprises.com/terms-of-use', target: "_blank" %></small><br />
+				<small><%= link_to "Privacy", 'http://www.dominionenterprises.com/privacy', target: "_blank" %> </small><br />
+			</div>
+		<div class="span2 hero-unit">Follow us:<br />
+			<small><%= link_to "FACEBOOK" , '#'%></small><br />
+				<small><%= link_to "TWITTER", '#' %> </small><br />
+				<small><%= link_to "GOOGLE+", '#' %></small><br />
+				<small><%= link_to "YOUTUBE", '#' %> </small><br />
+			</div>
 	</nav>
 </footer>

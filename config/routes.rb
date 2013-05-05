@@ -1,7 +1,13 @@
 SampleApp::Application.routes.draw do
 
+  resources :clients , except: :new
+  resources :cities
+  resources :streets
+
+
   resources :users
   resources :mailers
+
   resources :sessions, only: [:new, :create, :destroy]
   root :to => 'static_pages#home'
 
@@ -11,7 +17,6 @@ SampleApp::Application.routes.draw do
   
   match '/help',                                    to: 'static_pages#help'
   match '/about',                                   to: 'static_pages#about'
-  match '/contact',                                 to: 'static_pages#contact'
   
   match '/gallery/aberdeen-apartments',             to: 'static_pages#aberdeen'
   
@@ -23,8 +28,9 @@ SampleApp::Application.routes.draw do
   
   match '/branchs',                                 to: 'static_pages#branchs'
   
-  match '/mailus',                                  to: 'mailers#new'
-
+  match '/contact',                                  to: 'mailers#new'
+  
+  match '/book',                                    to: 'clients#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

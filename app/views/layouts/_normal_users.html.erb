@@ -1,0 +1,10 @@
+<li><%= link_to "Users", users_path , title: "Users List"%></li>
+  <li id="fat-menu" class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">|Account|<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+	 	<li><%= link_to "Profile", user_path(current_user) , title: "Profile"%></li>
+	 	<li><%= link_to "Settings", edit_user_path(current_user) , title: "Setting"%></li>
+	 	<li class="divider"></li>
+	 	<li><%= link_to "Sign out", signout_path, method: "delete" , title: "Sign out"%></li>
+	  </ul>
+  </li>

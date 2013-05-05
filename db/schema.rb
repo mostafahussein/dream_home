@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130430142604) do
+ActiveRecord::Schema.define(:version => 20130505165030) do
+
+  create_table "cities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "clients", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "city_id"
+    t.integer  "street_id"
+  end
 
   create_table "mailers", :force => true do |t|
     t.string   "company_name"
@@ -24,6 +39,48 @@ ActiveRecord::Schema.define(:version => 20130430142604) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "owners", :force => true do |t|
+    t.string   "f_name"
+    t.string   "l_name"
+    t.string   "address"
+    t.string   "tel_no"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "properties", :force => true do |t|
+    t.string   "p_street"
+    t.string   "p_city"
+    t.string   "postcode"
+    t.string   "property_type"
+    t.integer  "rooms"
+    t.integer  "rent"
+    t.integer  "owner_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "ticket_id"
+  end
+
+  add_index "properties", ["owner_id"], :name => "index_properties_on_owner_id"
+  add_index "properties", ["ticket_id"], :name => "index_properties_on_ticket_id"
+
+  create_table "streets", :force => true do |t|
+    t.string   "name"
+    t.integer  "city_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "tickets", :force => true do |t|
+    t.string   "city"
+    t.string   "street"
+    t.string   "ticket_type"
+    t.integer  "rooms"
+    t.integer  "rent"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -32,6 +89,7 @@ ActiveRecord::Schema.define(:version => 20130430142604) do
     t.string   "password_digest"
     t.string   "remember_token"
     t.boolean  "admin",           :default => false
+    t.boolean  "employee",        :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

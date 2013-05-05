@@ -1,0 +1,10 @@
+<div class="span3 hero-unit">
+		<small><%= link_to "Renters Guide" ,    '#', title: "Renters Guide" %></small><br />
+		<small><%= link_to "Pros & Cons of Renting" ,    '#', title: "Pros & Cons of Renting" %></small><br />
+		<small><%= link_to "City Guide" ,    '#', title: "City Guide" %></small><br />
+		<small><%= link_to "Business Travellers" ,    '#', title: "Business Travellers" %></small><br />
+		<small><%= link_to "Leisure Travellers" ,    '#', title: "Leisure Travellers" %></small><br />
+		<% if signed_in? %>
+		<small><%= link_to "Book Online" ,    '/book', title: "Book Online"%></small><br />
+		<% end %>
+	</div>

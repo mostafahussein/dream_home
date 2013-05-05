@@ -1,8 +1,11 @@
+$bodyBackground: #FF69d6;
+
 @import "bootstrap";
 
 /* mixins , variables, etc. */
 
 $grayMediumLight: #eaeaea;
+
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -37,7 +40,7 @@ textarea {
 
 /* Change nav-bar color */
 .navbar-inner {
-  background:$black;
+  background:#5F8DE3;
 }
 
 /* Typography */
@@ -78,6 +81,7 @@ p {
 }
 /* footer */
 footer {
+  
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;

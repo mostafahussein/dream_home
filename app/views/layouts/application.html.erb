@@ -9,14 +9,19 @@
  </head>
   <body>
   <%= render 'layouts/header'%>
-    <div class="container">
+    <div class="container-fluid">
     	<% flash.each do |key, value|%>
     		<%= content_tag(:div, value, class: "alert alert-#{key}") %>
     	<% end %>
     	<div class="center"><%= image_tag("dreamhomebanner.png" ,size:"400x300") %></div>
 	<br>
-
+<div class="row-fluid">
+	<%= render 'layouts/sidebar'%>
+	<div class="span9">
   <%= yield %>
+  </div>
+  <%= image_tag("green.png" ,size:"1366x600") %>
+  </div>
   <%= render 'layouts/footer'%>
   <%= debug(params) if Rails.env.development? %>
     </div>
