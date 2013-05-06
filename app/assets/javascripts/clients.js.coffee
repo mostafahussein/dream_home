@@ -14,3 +14,29 @@ jQuery ->
     else
       $('#client_street_id').empty()
       $('#client_street_id').parent().hide()
+jQuery ->
+  $('#client_room_id').parent().hide()
+  room = $('#client_room_id').html()
+  $('#client_property_id').change ->
+    property = $('#client_property_id :selected').text()
+    escaped_property = property.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
+    options = $(room).filter("optgroup[label='#{escaped_property}']").html()
+    if options
+      $('#client_room_id').html(options)
+      $('#client_room_id').parent().show()
+    else
+      $('#client_room_id').empty()
+      $('#client_room_id').parent().hide()
+jQuery ->
+  $('#client_rent_id').parent().hide()
+  rent = $('#client_rent_id').html()
+  $('#client_property_id').change ->
+    property = $('#client_property_id :selected').text()
+    escaped_property = property.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
+    options = $(rent).filter("optgroup[label='#{escaped_property}']").html()
+    if options
+      $('#client_rent_id').html(options)
+      $('#client_rent_id').parent().show()
+    else
+      $('#client_rent_id').empty()
+      $('#client_rent_id').parent().hide()

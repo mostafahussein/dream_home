@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130505165030) do
+ActiveRecord::Schema.define(:version => 20130506035100) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -22,10 +22,13 @@ ActiveRecord::Schema.define(:version => 20130505165030) do
   create_table "clients", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "city_id"
     t.integer  "street_id"
+    t.integer  "property_id"
+    t.integer  "room_id"
+    t.integer  "rent_id"
   end
 
   create_table "mailers", :force => true do |t|
@@ -39,30 +42,25 @@ ActiveRecord::Schema.define(:version => 20130505165030) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "owners", :force => true do |t|
-    t.string   "f_name"
-    t.string   "l_name"
-    t.string   "address"
-    t.string   "tel_no"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "properties", :force => true do |t|
-    t.string   "p_street"
-    t.string   "p_city"
-    t.string   "postcode"
     t.string   "property_type"
-    t.integer  "rooms"
-    t.integer  "rent"
-    t.integer  "owner_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
-    t.integer  "ticket_id"
   end
 
-  add_index "properties", ["owner_id"], :name => "index_properties_on_owner_id"
-  add_index "properties", ["ticket_id"], :name => "index_properties_on_ticket_id"
+  create_table "rents", :force => true do |t|
+    t.integer  "rent_amount"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "property_id"
+  end
+
+  create_table "rooms", :force => true do |t|
+    t.integer  "number_of_rooms"
+    t.integer  "property_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "streets", :force => true do |t|
     t.string   "name"

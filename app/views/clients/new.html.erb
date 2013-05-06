@@ -5,7 +5,8 @@
 
 <%= render 'form' %>
 
-
+<% if signed_in? && current_user.employee? %>
 <%= link_to 'Back', clients_path %>
+<% end %>
 </div>
 </div>

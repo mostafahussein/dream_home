@@ -12,23 +12,37 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, "Name:"%><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, "E-mail:" %><br />
     <%= f.text_field :email %>
   </div>
   <div class="field">
-  	<%= f.label :city_id, "City" %>
+  	<%= f.label :city_id, "City:" %>
   	<%= f.collection_select :city_id , City.order(:name), :id, :name, include_blank: true %>
   </div>
   
   <div class="field">
-  	<%= f.label :street_id, "Street" %>
+  	<%= f.label :street_id, "Street:" %>
   	<%= f.grouped_collection_select :street_id , City.order(:name),:streets, :name, :id, :name, include_blank: true %>
   </div>
   
+  <div class="field">
+  	<%= f.label :property_id, "Property Type:" %>
+  	<%= f.collection_select :property_id , Property.order(:property_type), :id, :property_type, include_blank: true %>
+  </div>
+  
+  <div class="field">
+  	<%= f.label :room_id, "Number of Rooms:" %>
+  	<%= f.grouped_collection_select :room_id , Property.order(:property_type),:rooms, :property_type, :id, :number_of_rooms, include_blank: true %>
+  </div>
+  
+  <div class="field">
+  	<%= f.label :rent_id, "Rent Amount:" %>
+  	<%= f.grouped_collection_select :rent_id , Property.order(:property_type),:rents, :property_type, :id, :rent_amount, include_blank: true %>
+  </div>
   <div class="actions">
     <%= f.submit "Submit Client", class: "btn btn-large btn-primary" %>
   </div>

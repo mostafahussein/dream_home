@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="34" version="2.0">
 <workbenchAdvisor/>
-<window height="716" width="1206" x="49" y="27">
+<window height="714" maximized="true" width="1212" x="97" y="166">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,14 +17,15 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="76" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.coffee" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.yaml" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.erb.xml" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.markdown" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.sass" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.ruby" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.erb.html" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.ruby" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.erb.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -36,23 +37,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.ruby" name="private_owner.rb" partName="private_owner.rb" title="private_owner.rb" tooltip="/root/rails_project/dream_home/app/models/private_owner.rb" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/root/rails_project/dream_home/app/models/private_owner.rb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="104" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.ruby" name="schema.rb" partName="schema.rb" title="schema.rb" tooltip="/root/rails_project/dream_home/db/schema.rb" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/root/rails_project/dream_home/db/schema.rb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="393"/>
-</editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="20130503035134_create_property_for_rents.rb" partName="20130503035134_create_property_for_rents.rb" title="20130503035134_create_property_for_rents.rb" tooltip="/root/rails_project/dream_home/db/migrate/20130503035134_create_property_for_rents.rb" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/root/rails_project/dream_home/db/migrate/20130503035134_create_property_for_rents.rb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="237" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="com.aptana.editor.erb.html" name="_sidebar.html.erb" partName="_sidebar.html.erb" title="_sidebar.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_sidebar.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/root/rails_project/dream_home/app/views/layouts/_sidebar.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -66,7 +57,15 @@
 </viewState>
 </view>
 <view id="com.aptana.snippets.ui.views.SnippetsView" partName="Snippets"/>
-<view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
+<view id="com.aptana.samples.ui.SamplesView" partName="Samples">
+<viewState/>
+</view>
+<view id="com.aptana.terminal.views.terminal:dream_home" partName="root@bt: ~/rails_project/dream_home">
+<viewState>
+<title>root@bt: ~/rails_project/dream_home</title>
+<workingDirectory>/root/rails_project/dream_home</workingDirectory>
+</viewState>
+</view>
 <view id="com.aptana.terminal.views.terminal:13e687b56ce" partName="root@bt: ~">
 <viewState>
 <title>root@bt: ~</title>
@@ -89,8 +88,14 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
+<view id="com.aptana.terminal.views.terminal:13e73007de8" partName="root@bt: ~/rails_project/dream_home">
+<viewState>
+<title>root@bt: ~/rails_project/dream_home</title>
+<workingDirectory>/root/rails_project/dream_home</workingDirectory>
+</viewState>
+</view>
 </views>
-<perspectives activePart="com.aptana.editor.ruby" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.erb.html" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -134,16 +139,18 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="com.aptana.terminal.views.terminal:13e6872f6ff"/>
 <view id="com.aptana.terminal.views.terminal:13e687b56ce"/>
+<view id="com.aptana.terminal.views.terminal:dream_home"/>
+<view id="com.aptana.terminal.views.terminal:13e73007de8"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
 <fastViews>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.29862306"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.29819277"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@9db0e2" orientation="256" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@9db0e2" orientation="256" selectedTabId="com.aptana.samples.ui.SamplesView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-<view id="com.aptana.samples.ui.SamplesView" ratio="0.3"/>
+<view id="com.aptana.samples.ui.SamplesView" ratio="0.2998325"/>
 <view id="com.aptana.snippets.ui.views.SnippetsView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
@@ -151,7 +158,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="com.aptana.explorer.view" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
@@ -167,11 +174,13 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="271" ratioRight="1084" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.7188552" ratioLeft="427" ratioRight="167" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.aptana.terminal.views.terminal:13e687b56ce" appearance="2" expanded="2">
+<folder activePageID="com.aptana.terminal.views.terminal:13e73007de8" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.aptana.terminal.views.terminal:13e6872f6ff" label="root@bt: ~"/>
 <page content="com.aptana.terminal.views.terminal:13e687b56ce" label="root@bt: ~"/>
+<page content="com.aptana.terminal.views.terminal:dream_home" label="root@bt: ~/rails_project/dream_home"/>
+<page content="com.aptana.terminal.views.terminal:13e73007de8" label="root@bt: ~/rails_project/dream_home"/>
 <page content="com.aptana.terminal.views.terminal:13e6151147c" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal:sample_app" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal:13e4560c8e4" label="LabelNotFound"/>
@@ -192,6 +201,8 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -216,42 +227,170 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/rails_project/dream_home/app/models/private_owner.rb"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/rails_project/dream_home/db/schema.rb"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/Desktop/app/models/property_for_rent.rb"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/Desktop/db/migrate/20130503035134_create_property_for_rents.rb"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/rails_project/dream_home/db/migrate/20130503035134_create_property_for_rents.rb"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/Desktop/spec/models/property_for_rent_spec.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/_header.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/_admin.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/_employee.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/_normal_users.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/application.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/_basic_tabs.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/users/show.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/mailers/new.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/rails_project/dream_home/config/routes.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/clients/show.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/clients/_form.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/rails_project/dream_home/app/models/client.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/root/rails_project/dream_home/app/models/city.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/root/rails_project/dream_home/app/views/layouts/_sidebar.html.erb"/>
 </editors>
-<item historyLabel="private_owner.rb" index="0">
-<position info="not_deleted" x="104" y="0"/>
+<item historyLabel="_basic_tabs.html.erb" index="5">
+<position info="not_deleted" x="1025" y="0"/>
 </item>
-<item historyLabel="schema.rb" index="1">
+<item historyLabel="_header.html.erb" index="0">
+<position info="not_deleted" x="717" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="452" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="544" y="0"/>
+</item>
+<item historyLabel="_basic_tabs.html.erb" index="5">
+<position info="not_deleted" x="1025" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="property_for_rent.rb" index="2">
+<item historyLabel="_normal_users.html.erb" index="3">
+<position info="not_deleted" x="529" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="384" y="0"/>
+</item>
+<item historyLabel="_basic_tabs.html.erb" index="5">
+<position info="not_deleted" x="1025" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="_normal_users.html.erb" index="3">
+<position info="not_deleted" x="529" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="384" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="384" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="384" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="384" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="_normal_users.html.erb" index="3">
+<position info="not_deleted" x="276" y="0"/>
+</item>
+<item historyLabel="_basic_tabs.html.erb" index="5">
+<position info="not_deleted" x="795" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="schema.rb" index="1">
+<item historyLabel="_normal_users.html.erb" index="3">
+<position info="not_deleted" x="276" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="_header.html.erb" index="0">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="show.html.erb | users" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="20130503035134_create_property_for_rents.rb" index="3">
+<item historyLabel="_header.html.erb" index="0">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="new.html.erb | mailers" index="7">
+<position info="not_deleted" x="668" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="8">
+<position info="not_deleted" x="94" y="0"/>
+</item>
+<item historyLabel="_header.html.erb" index="0">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="new.html.erb | mailers" index="7">
+<position info="not_deleted" x="668" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="_normal_users.html.erb" index="3">
+<position info="not_deleted" x="276" y="0"/>
+</item>
+<item historyLabel="_employee.html.erb" index="2">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="_admin.html.erb" index="1">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="_header.html.erb" index="0">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="schema.rb" index="1">
+<item historyLabel="show.html.erb" index="9">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="20130503035134_create_property_for_rents.rb" index="4">
-<position info="not_deleted" x="316" y="0"/>
+<item historyLabel="_form.html.erb" index="10">
+<position info="not_deleted" x="9" y="0"/>
 </item>
-<item historyLabel="property_for_rent_spec.rb" index="5">
+<item historyLabel="client.rb" index="11">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="city.rb" index="12">
+<position info="not_deleted" x="49" y="0"/>
+</item>
+<item historyLabel="client.rb" index="11">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="_sidebar.html.erb" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="20130503035134_create_property_for_rents.rb" index="4">
-<position info="not_deleted" x="316" y="0"/>
-</item>
-<item active="true" historyLabel="20130503035134_create_property_for_rents.rb" index="4">
-<position info="not_deleted" x="237" y="0"/>
+<item active="true" historyLabel="_sidebar.html.erb" index="13">
+<position info="not_deleted" x="519" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -270,45 +409,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="terminalArea"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="20130503035134_create_property_for_rents.rb" tooltip="/root/rails_project/dream_home/db/migrate/20130503035134_create_property_for_rents.rb">
-<persistable uri="file:/root/rails_project/dream_home/db/migrate/20130503035134_create_property_for_rents.rb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_sidebar.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_sidebar.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_sidebar.html.erb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="schema.rb" tooltip="/root/rails_project/dream_home/db/schema.rb">
-<persistable uri="file:/root/rails_project/dream_home/db/schema.rb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="new.html.erb" tooltip="/root/rails_project/dream_home/app/views/mailers/new.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/mailers/new.html.erb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="private_owner.rb" tooltip="/root/rails_project/dream_home/app/models/private_owner.rb">
-<persistable uri="file:/root/rails_project/dream_home/app/models/private_owner.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="20130503033605_create_private_owners.rb" tooltip="/root/Desktop/db/migrate/20130503033605_create_private_owners.rb">
-<persistable uri="file:/root/Desktop/db/migrate/20130503033605_create_private_owners.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="private_owner_spec.rb" tooltip="/root/Desktop/spec/models/private_owner_spec.rb">
-<persistable uri="file:/root/Desktop/spec/models/private_owner_spec.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="mailers_controller.rb" tooltip="/root/rails_project/dream_home/app/controllers/mailers_controller.rb">
-<persistable uri="file:/root/rails_project/dream_home/app/controllers/mailers_controller.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="sessions_controller.rb" tooltip="/root/rails_project/dream_home/app/controllers/sessions_controller.rb">
-<persistable uri="file:/root/rails_project/dream_home/app/controllers/sessions_controller.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/root/rails_project/dream_home/app/views/users/show.html.erb">
-<persistable uri="file:/root/rails_project/dream_home/app/views/users/show.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="new.html.erb" tooltip="/root/rails_project/dream_home/app/views/sessions/new.html.erb">
-<persistable uri="file:/root/rails_project/dream_home/app/views/sessions/new.html.erb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_basic_tabs.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_basic_tabs.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_basic_tabs.html.erb"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="application.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/application.html.erb">
 <persistable uri="file:/root/rails_project/dream_home/app/views/layouts/application.html.erb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_footer.html.erb" tooltip="/root/rails_project/sample_app/app/views/layouts/_footer.html.erb">
-<persistable uri="file:/root/rails_project/sample_app/app/views/layouts/_footer.html.erb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_normal_users.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_normal_users.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_normal_users.html.erb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.markdown" name="README.md" tooltip="/root/rails_project/sample_app/README.md">
-<persistable uri="file:/root/rails_project/sample_app/README.md"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_employee.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_employee.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_employee.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_admin.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_admin.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_admin.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_header.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_header.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_header.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_footer.html.erb" tooltip="/root/rails_project/dream_home/app/views/layouts/_footer.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/layouts/_footer.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="edit.html.erb" tooltip="/root/rails_project/dream_home/app/views/users/edit.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/users/edit.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/root/rails_project/dream_home/app/views/users/show.html.erb">
+<persistable uri="file:/root/rails_project/dream_home/app/views/users/show.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="user.rb" tooltip="/root/rails_project/dream_home/app/models/user.rb">
+<persistable uri="file:/root/rails_project/dream_home/app/models/user.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="20130503120809_delete_column_from_model.rb" tooltip="/root/rails_project/dream_home/db/migrate/20130503120809_delete_column_from_model.rb">
+<persistable uri="file:/root/rails_project/dream_home/db/migrate/20130503120809_delete_column_from_model.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="20130505164421_delete_column1.rb" tooltip="/root/rails_project/dream_home/db/migrate/20130505164421_delete_column1.rb">
+<persistable uri="file:/root/rails_project/dream_home/db/migrate/20130505164421_delete_column1.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="20130505163826_add_column3.rb" tooltip="/root/rails_project/dream_home/db/migrate/20130505163826_add_column3.rb">
+<persistable uri="file:/root/rails_project/dream_home/db/migrate/20130505163826_add_column3.rb"/>
 </file>
 </mruList>
 </workbench>
